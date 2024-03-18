@@ -4,9 +4,44 @@
   переключая тему
 */
 
-.page.theme_dark {
+:root .theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #000028;
+  --main-header-color: #DB00FF;
+  --accent-color: #FF0070;
+  --shadow-color: #FF0070;
+  --text-color: #F1B2CE;
+  --title-text-color: #FF0070;
+  --bg-image: url(/images/cover-image-dark.png);
+  --decoration-text: block;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .page.theme_auto {
+    --bg-color: #000028;
+    --main-header-color: #DB00FF;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --title-text-color: #FF0070;
+    --bg-image: url(/images/cover-image-dark.png);
+    --decoration-text: block;
+  } 
+
+  .page .header__text,
+  .page .article__title,
+  .page .advice__images__title,
+  .page .advice__item__title {
+    --title-text-color: var(--bg-color);
+  }
+}
+
+.page.theme_dark .header__text,
+.page.theme_dark .article__title,
+.page.theme_dark .advice__images__title,
+.page.theme_dark .advice__item__title {
+  color: var(--bg-color);
 }
