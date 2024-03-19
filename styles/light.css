@@ -15,8 +15,13 @@
   --shadow-color: #FF0070;
   --text-color: #353430;
   --title-text-color: #353430;
-  --bg-image: url(/images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
   --decoration-text: none;
+  --hover-color: #32312D66;
+}
+
+.theme_light .title-decor {
+  --title-text-color:  #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,26 +31,12 @@
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --title-text-color: #353430;
-    --bg-image: url(/images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
     --decoration-text: none;
+    --hover-color: #32312D66;
   }
 
-  .page .header__text,
-  .page .article__title,
-  .page .advice__images__title,
-  .page .advice__item__title {
-    --title-text-color: var(--title-text-color);
+  .theme_auto .title-decor {
+    --title-text-color:  #353430;
   }
- 
-}
-
-.page.theme_light .header__decorated-lamp {
-   display: none;
-}
-
-.page.theme_light .header__text,
-.page.theme_light .article__title,
-.page.theme_light .advice__images__title,
-.page.theme_light .advice__item__title {
-  color: var(--title-text-color);
 }
