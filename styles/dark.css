@@ -18,10 +18,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --decoration-text: block;
   --hover-color: #FF007066;
-}
-
-.title-decor {
-  --title-text-color:  #000028;
+  --article-title-text-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,9 +31,6 @@
     --bg-image: url(../images/cover-image-dark.png);
     --decoration-text: block;
     --hover-color: #FF007066;
+    --article-title-text-color: #000028;
   } 
-
-  .title-decor {
-    --title-text-color:  #000028;
-  }
 }

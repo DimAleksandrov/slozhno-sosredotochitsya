@@ -18,10 +18,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --decoration-text: none;
   --hover-color: #32312D66;
-}
-
-.theme_light .title-decor {
-  --title-text-color:  #353430;
+  --artcle-title-text-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,9 +31,6 @@
     --bg-image: url(../images/cover-image-light.png);
     --decoration-text: none;
     --hover-color: #32312D66;
-  }
-
-  .theme_auto .title-decor {
-    --title-text-color:  #353430;
+    --artcle-title-text-color: #353430;
   }
 }

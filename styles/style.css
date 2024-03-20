@@ -160,10 +160,13 @@ a:focus-visible::after {
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
+.title-decor {
+  color: var(--article-title-text-color);
+}
+
 .header__text {
   margin-block-start: 55px;
   margin-block-end: auto;
-  color: var(--title-text-color);
   font-weight: 700;
   background-color: var(--accent-color);
 }
@@ -195,7 +198,6 @@ a:focus-visible::after {
 
 .article__title,
 .advice__images__title {
-  color: var(--title-text-color);
   background-color: var(--accent-color);
 }
 
@@ -210,7 +212,6 @@ a:focus-visible::after {
 
 .advice__item__title {
   margin-block-start: 20px;
-  color: var(--title-text-color);
   background-color: var(--accent-color);
   font-weight: 400;
 }
